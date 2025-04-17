@@ -21,7 +21,7 @@ st.set_page_config(
 @st.cache_resource
 
 def load_model():
-    model_path = "_model.pkl"
+    model_path = "xgb_model_balanced.pkl"
     try:
         if not os.path.exists(model_path):
             st.error(f"Model file not found: {model_path}")
