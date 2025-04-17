@@ -70,7 +70,6 @@ st.markdown('<p class="description">Credit Card Fraud Detection</p>', unsafe_all
 
 st.subheader("Enter the Input for Fraud Detection")
 
-#df['Hour'] = (df['Time'] // 3600) % 24
 
 Hour = st.slider(
         "Time", 
@@ -83,7 +82,7 @@ Amount = st.slider(
          "Amount", 
         min_value=float(data['Amount']['Min']), 
         max_value=float(data['Amount']['Max']),
-        value=float(data['Amount']['Mean']), 
+        value=123.87, 
         step=0.01
     )
 
@@ -96,98 +95,98 @@ with st.expander("See Encoded Parameters"):
             "V1", 
             min_value=float(data['V1']['Min']), 
             max_value=float(data['V1']['Max']),
-            value=float(data['V1']['Mean']), 
+            value=-4.49, 
             step=0.01
         )
         V2 = st.slider(
             "V2", 
             min_value=float(data['V2']['Min']), 
             max_value=float(data['V2']['Max']),
-            value=float(data['V2']['Mean']), 
+            value=3.405965, 
             step=0.01
         )
         V3 = st.slider(
             "V3", 
             min_value=float(data['V3']['Min']), 
             max_value=float(data['V3']['Max']),
-            value=float(data['V3']['Mean']), 
+            value=-6.72, 
             step=0.01
         )
         V4 = st.slider(
             "V4", 
             min_value=float(data['V4']['Min']), 
             max_value=float(data['V4']['Max']),
-            value=float(data['V4']['Mean']), 
+            value=4.47, 
             step=0.01
         )
         V5 = st.slider(
             "V5", 
             min_value=float(data['V5']['Min']), 
             max_value=float(data['V5']['Max']),
-            value=float(data['V5']['Mean']), 
+            value=-2.95, 
             step=0.01
         )
         V6 = st.slider(
             "V6", 
             min_value=float(data['V6']['Min']), 
             max_value=float(data['V6']['Max']),
-            value=float(data['V6']['Mean']), 
+            value=-1.43, 
             step=0.01
         )
         V7 = st.slider(
             "V7", 
             min_value=float(data['V7']['Min']), 
             max_value=float(data['V7']['Max']),
-            value=float(data['V7']['Mean']), 
+            value=-5.17, 
             step=0.01
         )
         V8 = st.slider(
             "V8", 
             min_value=float(data['V8']['Min']), 
             max_value=float(data['V8']['Max']),
-            value=float(data['V8']['Mean']), 
+            value=0.95, 
             step=0.01
         )
         V9 = st.slider(
             "V9", 
             min_value=float(data['V9']['Min']), 
             max_value=float(data['V9']['Max']),
-            value=float(data['V9']['Mean']), 
+            value=-2.52, 
             step=0.01
         )
         V10 = st.slider(
             "V10", 
             min_value=float(data['V10']['Min']), 
             max_value=float(data['V10']['Max']),
-            value=float(data['V10']['Mean']), 
+            value=-5.45, 
             step=0.01
         )
         V11 = st.slider(
             "V11", 
             min_value=float(data['V11']['Min']), 
             max_value=float(data['V11']['Max']),
-            value=float(data['V11']['Mean']), 
+            value=3.71, 
             step=0.01
         )
         V12 = st.slider(
             "V12", 
             min_value=float(data['V12']['Min']), 
             max_value=float(data['V12']['Max']),
-            value=float(data['V12']['Mean']), 
+            value=-6.10, 
             step=0.01
         )
         V13 = st.slider(
             "V13", 
             min_value=float(data['V13']['Min']), 
             max_value=float(data['V13']['Max']),
-            value=float(data['V13']['Mean']), 
+            value=-0.09, 
             step=0.01
         )
         V14 = st.slider(
             "V14", 
             min_value=float(data['V14']['Min']), 
             max_value=float(data['V14']['Max']),
-            value=float(data['V14']['Mean']), 
+            value=-6.83, 
             step=0.01
         )
         
@@ -201,98 +200,98 @@ with st.expander("See Encoded Parameters"):
             "V15", 
             min_value=float(data['V15']['Min']), 
             max_value=float(data['V15']['Max']),
-            value=float(data['V15']['Mean']), 
+            value=-0.07, 
             step=0.01
         )
         V16 = st.slider(
             "V16", 
             min_value=float(data['V16']['Min']), 
             max_value=float(data['V16']['Max']),
-            value=float(data['V16']['Mean']), 
+            value=-4.00, 
             step=0.01
         )
         V17 = st.slider(
             "V17", 
             min_value=float(data['V17']['Min']), 
             max_value=float(data['V17']['Max']),
-            value=float(data['V17']['Mean']), 
+            value=-6.46, 
             step=0.01
         )
         V18 = st.slider(
             "V18", 
             min_value=float(data['V18']['Min']), 
             max_value=float(data['V18']['Max']),
-            value=float(data['V18']['Mean']), 
+            value=-2.15, 
             step=0.01
         )
         V19 = st.slider(
             "V19", 
             min_value=float(data['V19']['Min']), 
             max_value=float(data['V19']['Max']),
-            value=float(data['V19']['Mean']), 
+            value=0.66, 
             step=0.01
         )
         V20 = st.slider(
             "V20", 
             min_value=float(data['V20']['Min']), 
             max_value=float(data['V20']['Max']),
-            value=float(data['V20']['Mean']), 
+            value=0.40, 
             step=0.01
         )
         V21 = st.slider(
             "V21", 
             min_value=float(data['V21']['Min']), 
             max_value=float(data['V21']['Max']),
-            value=float(data['V21']['Mean']), 
+            value=0.46, 
             step=0.01
         )
         V22 = st.slider(
             "V22", 
             min_value=float(data['V22']['Min']), 
             max_value=float(data['V22']['Max']),
-            value=float(data['V22']['Mean']), 
+            value=0.08, 
             step=0.01
         )
         V23 = st.slider(
             "V23", 
             min_value=float(data['V23']['Min']), 
             max_value=float(data['V23']['Max']),
-            value=float(data['V23']['Mean']), 
+            value=-0.09, 
             step=0.01
         )
         V24 = st.slider(
             "V24", 
             min_value=float(data['V24']['Min']), 
             max_value=float(data['V24']['Max']),
-            value=float(data['V24']['Mean']), 
+            value=-0.10, 
             step=0.01
         )
         V25 = st.slider(
             "V25", 
             min_value=float(data['V25']['Min']), 
             max_value=float(data['V25']['Max']),
-            value=float(data['V25']['Mean']), 
+            value=0.04, 
             step=0.01
         )
         V26 = st.slider(
             "V26", 
             min_value=float(data['V26']['Min']), 
             max_value=float(data['V26']['Max']),
-            value=float(data['V26']['Mean']), 
+            value=0.05, 
             step=0.01
         )
         V27 = st.slider(
             "V27", 
             min_value=float(data['V27']['Min']), 
             max_value=float(data['V27']['Max']),
-            value=float(data['V27']['Mean']), 
+            value=0.21, 
             step=0.01
         )
         V28 = st.slider(
             "V28", 
             min_value=float(data['V28']['Min']), 
             max_value=float(data['V28']['Max']),
-            value=float(data['V28']['Mean']), 
+            value=0.07, 
             step=0.01
         )
 
@@ -331,6 +330,8 @@ input_data = pd.DataFrame({
             'Hour': [Hour],
         })
 
+# if st.button("Predict"):
+#     try:
 
 
 if st.button("Predict"):
