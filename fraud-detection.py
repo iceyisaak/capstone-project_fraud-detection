@@ -70,13 +70,13 @@ st.markdown('<p class="description">Credit Card Fraud Detection</p>', unsafe_all
 
 st.subheader("Enter the Input for Fraud Detection")
 
+#df['Hour'] = (df['Time'] // 3600) % 24
 
-
-Time = st.slider(
+Hour = st.slider(
         "Time", 
-        min_value=float(data['Time']['Min']), 
-        max_value=float(data['Time']['Max']),
-        value=float(data['Time']['Mean']), 
+        min_value=0.0, 
+        max_value=23.0,
+        value=12.0, 
         step=0.01
     )
 Amount = st.slider(
@@ -299,8 +299,6 @@ with st.expander("See Encoded Parameters"):
 
 
 input_data = pd.DataFrame({
-            'Time': [Time],
-            'Amount': [Amount],
             'V1': [V1],
             'V2':[V2],
             'V3':[V3],
@@ -329,6 +327,8 @@ input_data = pd.DataFrame({
             'V26':[V26],
             'V27':[V27],
             'V28':[V28],
+            'Amount': [Amount],
+            'Hour': [Hour],
         })
 
 
